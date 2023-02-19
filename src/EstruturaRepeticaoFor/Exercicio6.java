@@ -2,24 +2,23 @@ package EstruturaRepeticaoFor;
 
 import java.util.Scanner;
 
-public class Exercicio1 {
+public class Exercicio6 {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 
 		Scanner sc = new Scanner(System.in);
 
-		System.out.println("Entre com um valor inteiro");
-		int num = sc.nextInt();
+		System.out.println("Entre com um numero");
+		int numero = sc.nextInt();
 
-		for (int i = 0; i <= num; i++) {
-			if (i % 2 != 0) {
-				System.out.println("Numeros impares " + i);
+		for (int i = 1; i <= numero; i++) {
+
+			if (numero % i == 0) {
+				System.out.println(i);
 			}
 		}
-
 		sc.close();
-
 	}
 
 }
