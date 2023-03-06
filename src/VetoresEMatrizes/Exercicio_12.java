@@ -27,7 +27,6 @@ public class Exercicio_12 {
 			alturas[i] = sc.nextDouble();
 		}
 
-		
 		// Media altura
 		double AlturaMedia = 0;
 		for (int i = 0; i < alturas.length; i++) {
@@ -37,7 +36,7 @@ public class Exercicio_12 {
 		System.out.printf("Altura média: %.2f\n " + AlturaMedia);
 
 		// idade e porcentagem
-		
+
 		double nuMenores = 0, porcentagem = 0;
 		for (int i = 0; i < alturas.length; i++) {
 			if (idades[i] < 16) {
@@ -45,12 +44,12 @@ public class Exercicio_12 {
 			}
 		}
 		porcentagem = (nuMenores / nu) * 100;
-		
+
 		System.out.println();
 		System.out.println("Porcentagem de total menores " + porcentagem);
-        System.out.println();
-		
-		//nomes
+		System.out.println();
+
+		// nomes
 		for (int i = 0; i < idades.length; i++) {
 			if (idades[i] < 16) {
 				System.out.println("Pesoas menores de idade: " + nomes[i]);

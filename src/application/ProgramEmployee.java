@@ -23,6 +23,7 @@ public class ProgramEmployee {
 		System.out.println("Employee: " + em);
 		System.out.println();
 
+		
 		System.out.println("Which percentage to increase salary? ");
 		double percentage = sc.nextDouble();
 		em.increaseSalary(percentage);
