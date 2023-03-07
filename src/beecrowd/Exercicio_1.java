@@ -51,5 +51,6 @@ public class Exercicio_1 {
 			}
 		}
 
+		sc.close();
 	}
 }

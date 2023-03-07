@@ -12,7 +12,7 @@ public class ProgramHotel {
 		System.out.println("Quantos quartos serão alugados? ");
 		int numero = sc.nextInt();
 
-		Hotel[] quartos = new Hotel[10];
+		Hotel[] quartos = new Hotel[numero];
 
 		for (int i = 1; i <= numero; i++) {
 			System.out.println("Alugados # " + i + ": ");
