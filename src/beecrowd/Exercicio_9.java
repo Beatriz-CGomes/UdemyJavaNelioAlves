@@ -1,83 +1,37 @@
 package beecrowd;
 
-import java.util.ArrayList;
-import java.util.Collections;
 import java.util.Scanner;
 
 public class Exercicio_9 {
 
 	public static void main(String[] args) {
-		// Exercicios para treinar collections
+		// ABELHA 1072 RESPONDIDO COM VETOR
 
 		Scanner sc = new Scanner(System.in);
 
-		ArrayList<String> cursos = new ArrayList<>();
+		System.out.println("Quantos números serão digitados");
+		int numeros = sc.nextInt();
 
-		int op;
-		do {
-			System.out.println("-------------------------");
-			System.out.println(" TABELA COLLECTIONS ");
-			System.out.println("1 - Desejar incluir um curso na lista: ");
-			System.out.println("2 - Deseja excluir um curso da lista: ");
-			System.out.println("3 - Deseja Editar um curso da lista: ");
-			System.out.println("4 - Deseja listar os cursos : ");
-			System.out.println("5 - Deseja sair: ");
-			System.out.println("** Entre com a opção desejada **");
-			System.out.println("-------------------------");
+		int[] valores = new int[numeros];
+		int out = 0, in = 0;
 
-			op = sc.nextInt();
+		for (int i = 0; i < numeros; i++) {
+			System.out.println("Entre com os números " + (i + 1));
+			valores[i] = sc.nextInt();
+		}
 
-			switch (op) {
-			case 1:
-				sc.nextLine();
-				System.out.println("Nome para cadastro: ");
-				sc.skip("\\R?");
-				String name = sc.nextLine();
-				cursos.add(name);
-				break;
-
-			case 2:
-				sc.nextLine();
-				System.out.println("Digite o nome do curso que deseja deletar: ");
-				String nomeDelete = sc.nextLine();
-				if (cursos.contains(nomeDelete)) {
-					cursos.remove(nomeDelete);
-				} else {
-					System.out.println("Curso não contém na lista! ");
-				}
-				break;
-			case 3:
-				sc.nextLine();
-				System.out.println("Digite o nome do curso que você deseja editar:");
-				String editar = sc.nextLine();
-				System.out.println("Digite o nome do curso que entrará no lugar: " + editar);
-				String novoNome = sc.nextLine();
-				if (cursos.contains(editar)) {
-					cursos.remove(editar);
-					cursos.add(novoNome);
-				} else {
-					System.out.println("Erro!! ");
-				}
-				break;
-
-			case 4:
-				sc.nextLine();
-				System.out.println("Lista com todos os nossos Cursos: ");
-				Collections.sort(cursos);
-				System.out.println(cursos);
-				break;
-
-			case 5:
-				System.out.println("Muito obrigada por escolher nossos cursos! ");
-				sc.close();
-				System.exit(0);
-				break;
-			default:
-				System.out.println("Essa opção não exste");
-				break;
-
+		for (int i = 0; i < numeros; i++) {
+			if (valores[i] >= 10 && valores[i] <= 20) {
+				in++;
+			} else {
+				out++;
 			}
-		} while (op != 5);
+		}
+
+		System.out.println(in + " IN  ");
+		System.out.println(out + " OUT  ");
+		sc.close();
+
 	}
 
 }
