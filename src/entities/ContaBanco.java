@@ -1,6 +1,6 @@
 package entities;
 
-public class ContaBanco {
+public  class ContaBanco {
 
 	private Integer number;
 	private String holder;
