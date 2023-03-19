@@ -1,4 +1,4 @@
-package fucoes;
+package fucoesETryCacth;
 
 import java.util.Scanner;
 
