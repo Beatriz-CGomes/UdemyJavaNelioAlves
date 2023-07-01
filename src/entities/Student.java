@@ -13,8 +13,8 @@ public class Student {
 	}
 
 	public double missingPoints() {
-		if (finalGrade() < 60.00) {
-			return 60.00 - finalGrade();
+		if (finalGrade() < 6.00) {
+			return 6.00 - finalGrade();
 
 		} else {
 			return 0.0;

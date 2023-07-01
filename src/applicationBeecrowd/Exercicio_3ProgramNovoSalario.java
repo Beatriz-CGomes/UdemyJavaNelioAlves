@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 import entitiesBeecrowd.Exercicio_3NovoSalario;
 
-public class Exericicio_3ProgramNovoSalario {
+public class Exercicio_3ProgramNovoSalario {
 
 	public static void main(String[] args) {
 		// BEE 1048 - Respondedo com metado
@@ -23,7 +23,6 @@ public class Exericicio_3ProgramNovoSalario {
 		System.out.println();
 		System.out.println();
 		System.out.println("-------------------------------------------------");
-		
 
 		System.out.println("Entre com seu salario ");
 		novo.salary = sc.nextDouble();
