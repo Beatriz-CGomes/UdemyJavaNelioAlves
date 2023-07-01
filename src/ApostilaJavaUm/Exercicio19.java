@@ -15,10 +15,11 @@ public class Exercicio19 {
 
 			if (sexo == 'F') {
 				F++;
-				System.out.println("Sexo Feminino");
+				System.out.println("Sexo Feminino!");
 
 			} else {
 				M++;
+				System.out.println("Sexo Masculino!");
 			}
 		}
 

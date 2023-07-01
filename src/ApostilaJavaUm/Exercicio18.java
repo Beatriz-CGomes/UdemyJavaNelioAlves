@@ -22,6 +22,7 @@ public class Exercicio18 {
 			}
 		}
 
+		System.out.println("**************************************");
 		System.out.println("Total de MAIOR de idade " + maiorIdade);
 		System.out.println("Total de MENOR de idade " + menorIdade);
 		sc.close();

@@ -6,7 +6,7 @@ public class Exercicio20 {
 
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
-		double somaF = 0, somaD = 0;
+		double somaF = 0, somaD = 0, totalCarrosDoisMil = 0, totalGeral = 0;
 		char resp;
 
 		do {
@@ -24,12 +24,14 @@ public class Exercicio20 {
 			case 1:
 				somaD = valorCarro * 0.12;
 				somaF = somaD - valorCarro;
+				totalCarrosDoisMil++;
+				totalGeral++;
 				break;
 
 			case 2:
 				somaD = valorCarro * 0.07;
 				somaF = somaD - valorCarro;
-
+				totalGeral++;
 				break;
 
 			default:
@@ -39,9 +41,11 @@ public class Exercicio20 {
 
 			System.out.println("Deseja continuar calculado? 'S' - SIM / 'N' - NÃO");
 			resp = sc.next().charAt(0);
-		} while (resp == 'S');
+		} while (resp == 'S' || resp == 's');
 		sc.close();
-		System.out.println("O valor do desconto: " + somaD + " valor a ser pago: " + somaF);
+		System.out.printf("O valor do desconto: %.2f %n", somaD, " valor a ser pago: ", somaF);
+		System.out.println("Total de carros vendidos: " + totalGeral);
+		System.out.println("Total de carro de Até 2000: " + totalCarrosDoisMil);
 
 	}
 

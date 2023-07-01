@@ -14,10 +14,11 @@ public class Exercicio12 {
 		System.out.println("Valor de Fabrica: ");
 		double custoFabrica = sc.nextDouble();
 
-		valorImposto = (custoFabrica * imposto) + custoFabrica;
-		valorFinal = (valorImposto * distribuidor) + valorImposto;
+		valorImposto = custoFabrica * imposto;
+		valorFinal = (valorImposto * distribuidor) + custoFabrica;
 
 		System.out.println("Valor da Fabrica: " + custoFabrica);
+		System.out.println("Valor da Impsoto: " + valorImposto);
 		System.out.println("Valor Final " + valorFinal);
 
 	}

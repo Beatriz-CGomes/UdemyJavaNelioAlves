@@ -17,7 +17,7 @@ public class Exercicio8 {
 
 		soma = cotacao * dolar;
 
-		System.out.println("R$ " + soma);
+		System.out.printf("R$ %.2f %n" , soma);
 		sc.close();
 	}
 
