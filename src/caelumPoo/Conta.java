@@ -5,7 +5,7 @@ public class Conta {
 	int numero;
 	double saldo;
 	double limite;
-	ContaCliente titual;
+	ContaCliente titual = new ContaCliente();
 
 	public Conta() {
 	}
@@ -37,5 +37,7 @@ public class Conta {
 		}
 
 	}
+
+	
 
 }

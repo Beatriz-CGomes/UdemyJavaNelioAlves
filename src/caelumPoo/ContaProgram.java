@@ -1,17 +1,27 @@
 package caelumPoo;
 
+import java.util.Scanner;
+
 public class ContaProgram {
 
 	public static void main(String[] args) {
-
+        Scanner sc = new Scanner(System.in);
 		Conta conta = new Conta();
-		ContaCliente cliente = new ContaCliente();
 
-		conta.titual = cliente;
+		System.out.println("Nome: ");
+		conta.titual.nome = sc.next();
+		
+		System.out.println("Sobrenome: ");
+		conta.titual.sobreNome = sc.next();
+		
+        System.out.println(conta.titual);
+        
+		/*
 		cliente.nome = "Beatriz";
 		conta.numero = 12345;
 		conta.saldo = 3600;
 
+	
 		// conta.saca(2500);
 		conta.deposita(150);
 
@@ -48,7 +58,10 @@ public class ContaProgram {
 		System.out.println("---------------");
 		System.out.printf("%.2f %n", conta.saldo);
 		System.out.printf("%.2f %n", conta1.saldo);
-
+*/
+        
+        
+        sc.close();
 	}
 
 }

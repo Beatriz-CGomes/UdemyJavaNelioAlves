@@ -8,21 +8,21 @@ public class ProdutoProgram {
 
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
-		Produto p = new Produto();
 
 		System.out.println("Entre com dados do produto: ");
 		System.out.println("Nome: ");
-		p.nome = sc.nextLine();
+		String nome = sc.nextLine();
 
 		System.out.println("Preço: ");
-		p.preco = sc.nextDouble();
+		double preco = sc.nextDouble();
 
-		System.out.println("Quantidade: ");
-		p.quantidade = sc.nextInt();
+		//sobrecarga
+		Produto p = new Produto(nome, preco);
 
 		System.out.println("Produto: " + p);
 		System.out.println();
 
+		//adicionado e removendo a quantidade de produtos com os metados
 		System.out.println("Entre com o numero de produtos para add no estoque");
 		System.out.println("Adicionar quantidade: ");
 		int quantidade = sc.nextInt();
@@ -31,6 +31,7 @@ public class ProdutoProgram {
 		System.out.println("Update: " + p);
 
 		System.out.println();
+
 		System.out.println("Entre com o numero de produtos para remove no estoque");
 		System.out.println("remover quantidade: ");
 		quantidade = sc.nextInt();
