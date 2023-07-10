@@ -13,30 +13,30 @@ public class Exercicio_28 {
 		double[] altura = new double[n];
 		char[] genero = new char[n];
 
-		double menorAltura = altura[0], maiorAltura = altura[0], nHomens = 0, nMulheres = 0, alturaTotalFeminina = 0;
+		double menorAltura, maiorAltura, nHomens = 0, nMulheres = 0, alturaTotalFeminina = 0;
 
 		for (int i = 0; i < altura.length; i++) {
-			System.out.println("Altura " + (i + 1) + " pessoa");
+			System.out.printf("Altura da %da pessoa: ", i + 1);
 			altura[i] = sc.nextDouble();
 
-			System.out.println("Genero " + (i + 1) + " pessoa");
+			System.out.printf("Genero da %da pessoa: ", i + 1);
 			genero[i] = sc.next().charAt(0);
 		}
 
+		 menorAltura = altura[0];
+		 maiorAltura = altura[0];
+		
 		// Maior e menor altura
 		for (int i = 0; i < altura.length; i++) {
 			if (altura[i] > maiorAltura) {
 				maiorAltura = altura[i];
 			}
-
-		}
-		for (int i = 0; i < altura.length; i++) {
 			if (altura[i] < menorAltura) {
 				menorAltura = altura[i];
 			}
 		}
 
-		// Media altura feminina e quantidade de homens 
+		// Media altura feminina e quantidade de homens
 		for (int i = 0; i < altura.length; i++) {
 			if (genero[i] == 'F' || genero[i] == 'f') {
 				nMulheres++;
