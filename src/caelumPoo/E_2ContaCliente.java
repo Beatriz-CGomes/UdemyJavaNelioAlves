@@ -1,12 +1,12 @@
 package caelumPoo;
 
-public class ContaCliente {
+public class E_2ContaCliente {
 
 	String nome;
 	String sobreNome;
 	int CPF;
 
-	public ContaCliente() {}
+	public E_2ContaCliente() {}
 
 	@Override
 	public String toString() {

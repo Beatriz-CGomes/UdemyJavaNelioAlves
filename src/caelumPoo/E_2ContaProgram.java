@@ -2,11 +2,11 @@ package caelumPoo;
 
 import java.util.Scanner;
 
-public class ContaProgram {
+public class E_2ContaProgram {
 
 	public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-		Conta conta = new Conta();
+		E_2Conta conta = new E_2Conta();
 
 		System.out.println("Nome: ");
 		conta.titual.nome = sc.next();

@@ -1,12 +1,12 @@
 package caelumPoo;
 
-public class Carro {
+public class E_1Carro {
 
 	public String cor;
 	public String modelo;
 	public double velocidadeAtual;
 	public double velocidadeMaxima;
-	CarroMotor
+	E_1CarroMotor
 	motor;
 
 	public void ligar() {

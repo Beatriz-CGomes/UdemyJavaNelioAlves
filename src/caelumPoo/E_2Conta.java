@@ -1,13 +1,13 @@
 package caelumPoo;
 
-public class Conta {
+public class E_2Conta {
 
 	int numero;
 	double saldo;
 	double limite;
-	ContaCliente titual = new ContaCliente();
+	E_2ContaCliente titual = new E_2ContaCliente();
 
-	public Conta() {
+	public E_2Conta() {
 	}
 
 	public boolean saca(double quantidade) {
@@ -24,7 +24,7 @@ public class Conta {
 		saldo += quantidade;
 	}
 
-	public boolean transfere(Conta destino, double valor) {
+	public boolean transfere(E_2Conta destino, double valor) {
 		// saldo -= valor;
 		// destino.saldo = destino.saldo + valor;
 		boolean retirou = this.saca(valor);

@@ -2,12 +2,12 @@ package caelumPoo;
 
 import java.util.Scanner;
 
-public class CarroProgram {
+public class E_1CarroProgram {
 
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
 		
-		Carro meuCarro = new Carro();
+		E_1Carro meuCarro = new E_1Carro();
 		meuCarro.cor = "Preto";
 		meuCarro.modelo = "Toyota Etios";
 		meuCarro.velocidadeAtual = 0;
