@@ -20,8 +20,8 @@ public class Program2 {
 
 		// FINDALL
 		System.out.println("\n=== TEST 2: seller findAll ==== ");
-        List<Department> list = dD.findAll();
-        for(Department dpa: list) {
+                List<Department> list = dD.findAll();
+                for(Department dpa: list) {
         	System.out.println(dpa);
         }
 		// INSERT
